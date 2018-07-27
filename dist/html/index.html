@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https:/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="site">
+    <div class="wrapper">
+      <div class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="top__inner">
+              <div class="top__left">
+                <div class="header__logo">
+                  <a href="#"><img src="../img/header__logo.jpg" alt="">
+              </div></a>
+                  <nav class="header__menu">
+                    <li>
+                      <a href="#" class="_link active">Женщинам
+                  </a>
+                    </li>
+                    <li><a href="#" class="_link">Мужчинам</a></li>
+                    <li><a href="#" class="_link">Детям</a></li>
+                    <li><a href="#" class="_link">Аксессуары</a></li>
+                  </nav>
+                </div>
+                <ul class="header__button">
+                  <li class="currency">
+                    <button class="btn btn-blue">
+                                  <i class="icon-flag"></i>
+                                  <span>RUB</span>
+                                  </button>
+                  </li>
+      
+                  <li>
+                    <button class="btn btn-blue">
+                                      <span>Войти</span>
+                                  </button>
+                  </li>
+      
+                  <li>
+                    <button class="btn btn-green">
+                                  <i class="icon-cart"></i>
+                                  <span>Корзина</span>
+                                  </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom">
+            <div class="container">
+              <div class="bottom__inner">
+      
+                  <ul class="header__sub__menu">
+                    <li><a href="#" class="_link">Новинки</a></li>
+                    <li><a href="#" class="_link">Стиль жизни </a></li>
+                    <li><a href="#" class="_link">Одежда</a></li>
+                    <li><a href="#" class="_link">Обувь</a></li>
+                    <li><a href="#" class="_link">Бренды</a></li>
+                    <li><a href="#" class="_link">Премиум</a></li>
+                    <li><a href="#" class="_link">Спорт</a></li>
+                    <li><a href="#" class="_link">Красота</a></li>
+                    <li><a href="#" class="_link">Распродажа</a></li>
+                  </ul>
+      
+                <form class="header__search">
+                  <input type="text" class="search__field" placeholder="Поиск">
+                  <div class="search__button">
+                    <button></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="main">
+      <div class="container">
+        <div class="main__banner">
+          <div class="banner__text">
+            <ul class="breadcrumb">
+              <li><a href="#">Главная</a>
+        </li>
+              <li class="active">Женщинам</li>
+            </ul>
+            <h1 class="banner__name">Женская одежда</h1>
+          </div>
+          <div class="banner__picture">
+      
+      
+          </div>
+        </div>
+        <div class="main__inner">
+      
+      <aside class="sidebar">
+        <div class="sidebar__inner">
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name">Категория</div>
+              <div class="arrow__top"></div>
+            </div>
+            <ul class="elem__info">
+              <li><label for="check1" class="checkbox__item"><input type="checkbox" id="check1" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Платья и сарафаны</div></label></li>
+              <li><label for="check2" class="checkbox__item"><input type="checkbox" id="check2" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Верхняя одежда</div></label></li>
+              <li><label for="check3" class="checkbox__item"><input type="checkbox" id="check3" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Пляжная одежда</div></label></li>
+              <li><label for="check4" class="checkbox__item"><input type="checkbox" id="check4" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Блейзеры</div></label></li>
+              <li><label for="check5" class="checkbox__item"><input type="checkbox" id="check5" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Кардиганы</div></label></li>
+      
+              <li><label for="check6" class="checkbox__item"><input type="checkbox" id="check6" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Пальто</div></label></li>
+      
+              <li><label for="check7" class="checkbox__item"><input type="checkbox" id="check7" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Платья</div></label></li>
+      
+              <li><label for="check8" class="checkbox__item"><input type="checkbox" id="check8" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Худи</div></label></li>
+      
+              <li><label for="check9" class="checkbox__item"><input type="checkbox" id="check9" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Куртки</div></label></li>
+      
+              <li><label for="check10" class="checkbox__item"><input type="checkbox" id="check10" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Джинсы</div></label></li>
+      
+              <li><label for="check11" class="checkbox__item"><input type="checkbox" id="check11" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Джемперы</div></label></li>
+      
+              <li><label for="check12" class="checkbox__item"><input type="checkbox" id="check12" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Женское белье</div></label></li>
+      
+              <li><label for="check13" class="checkbox__item"><input type="checkbox" id="check13" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Ночная одежда</div></label></li>
+      
+            </ul>
+            <button class="btn btn__sidebar"><span>Показать еще</span></button>
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name">Бренд</div>
+              <div class="arrow__right"></div>
+            </div>
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name">Размер</div>
+              <div class="arrow__top"></div>
+            </div>
+            <ul class="elem__info list__size">
+              <li><label for="check14" class="checkbox__item"><input type="checkbox" id="check14" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">38</div></label></li>
+              <li><label for="check15" class="checkbox__item"><input type="checkbox" id="check15" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">40</div></label></li>
+              <li><label for="check16" class="checkbox__item"><input type="checkbox" id="check16" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">42</div></label></li>
+              <li><label for="check17" class="checkbox__item"><input type="checkbox" id="check17" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">44</div></label></li>
+              <li><label for="check18" class="checkbox__item"><input type="checkbox" id="check18" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">46</div></label></li>
+              <li><label for="check19" class="checkbox__item"><input type="checkbox" id="check19" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">48</div></label></li>
+              <li><label for="check20" class="checkbox__item"><input type="checkbox" id="check20" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">50</div></label></li>
+              <li><label for="check21" class="checkbox__item"><input type="checkbox" id="check21" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">52</div></label></li>
+              <li><label for="check22" class="checkbox__item"><input type="checkbox" id="check22" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">54</div></label></li>
+              <li><label for="check23" class="checkbox__item"><input type="checkbox" id="check23" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">56</div></label></li>
+              <li><label for="check24" class="checkbox__item"><input type="checkbox" id="check24" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">58</div></label></li>
+              <li><label for="check25" class="checkbox__item"><input type="checkbox" id="check25" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">60</div></label></li>
+              <li><label for="check26" class="checkbox__item"><input type="checkbox" id="check26" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">62</div></label></li>
+              <li><label for="check27" class="checkbox__item"><input type="checkbox" id="check27" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">64</div></label></li>
+              <li><label for="check28" class="checkbox__item"><input type="checkbox" id="check28" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">66</div></label></li>
+              <li><label for="check29" class="checkbox__item"><input type="checkbox" id="check29" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">68</div></label></li>
+              <li><label for="check30" class="checkbox__item"><input type="checkbox" id="check30" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">70</div></label></li>
+              <li><label for="check31" class="checkbox__item"><input type="checkbox" id="check31" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">72</div></label></li>
+      
+            </ul>
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name">Цвет</div>
+              <div class="arrow__top"></div>
+            </div>
+            <ul class="elem__info list__color">
+              <li><label for="check32" class="checkbox__item"><input type="checkbox" id="check32" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text"><div class="color blue">Синий</div></div></label></li>
+              <li><label for="check33" class="checkbox__item"><input type="checkbox" id="check33" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text"><div class="color red">Красный</div></div></label></li>
+              <li><label for="check34" class="checkbox__item"><input type="checkbox" id="check34" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text"><div class="color green">Зеленый</div></div></label></li>
+              <li><label for="check35" class="checkbox__item"><input type="checkbox" id="check35" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text"><div class="color orange">Оранжевый</div></div></label></li>
+              <li><label for="check36" class="checkbox__item"><input type="checkbox" id="check36" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text"><div class="color purple">Фиолетовый</div></div></label></li>
+              <li><label for="check37" class="checkbox__item"><input type="checkbox" id="check37" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text"><div class="color dark_blue">Темно-синий</div></div></label></li>
+            </ul>
+      
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name">Цена</div>
+              <div class="arrow__top"></div>
+            </div>
+            <div class="elem__info">
+        <div id="slider-range" max="40000"></div>
+          <label for="amount">  <input type="text" id="amount"></label>
+      
+      
+      
+      
+            </div>
+      
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name">Стиль</a></div>
+              <div class="arrow__top"></div>
+            </div>
+            <div class="elem__info">
+              <select name="" id="" class="select__style">
+      
+         <option value="">Ультрамодный</option>
+       </select>
+            </div>
+      
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="name"><a href="">Коллекция</a></div>
+              <div class="arrow__right"></div>
+            </div>
+      
+          </div>
+          <div class="sidebar__elem">
+            <div class="elem__title">
+              <div class="div">Материал</div>
+              <div class="arrow__top"></div>
+            </div>
+            <ul class="elem__info list__materials">
+              <li><label for="check38" class="checkbox__item"><input type="checkbox" id="check38" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Акрил</div></label></li>
+              <li><label for="check39" class="checkbox__item"><input type="checkbox" id="check39" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Вискоза</div></label></li>
+              <li><label for="check40" class="checkbox__item"><input type="checkbox" id="check40" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Дерево</div></label></li>
+              <li><label for="check41" class="checkbox__item"><input type="checkbox" id="check41" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Искусственная замша</div></label></li>
+              <li><label for="check42" class="checkbox__item"><input type="checkbox" id="check42" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Искусственная кожа</div></label></li>
+              <li><label for="check43" class="checkbox__item"><input type="checkbox" id="check43" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Гусиный пух</div></label></li>
+              <li><label for="check44" class="checkbox__item"><input type="checkbox" id="check44" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Микрофибра</div></label></li>
+              <li><label for="check45" class="checkbox__item"><input type="checkbox" id="check45" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Натуральная замша</div></label></li>
+              <li><label for="check46" class="checkbox__item"><input type="checkbox" id="check46" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Полиамид</div></label></li>
+              <li><label for="check47" class="checkbox__item"><input type="checkbox" id="check47" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Полимер</div></label></li>
+              <li><label for="check48" class="checkbox__item"><input type="checkbox" id="check48" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Лен</div></label></li>
+              <li><label for="check49" class="checkbox__item"><input type="checkbox" id="check49" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Хлопок</div></label></li>
+              <li><label for="check50" class="checkbox__item"><input type="checkbox" id="check50" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Шелк</div></label></li>
+      
+            </ul>
+          </div>
+        </div>
+        <button class="btn btn-blue"><span>Сбросить все фильтры</span></button>
+        <div class="sidebar__elem subscription">
+          <div class="elem__title">
+            <div><a href="">Коллекция</a></div>
+          </div>
+          <div class="elem__info">
+            <ul>
+              <li><label for="check51" class="checkbox__item"><input type="checkbox" id="check51" class="checkbox"><div class="checkbox__custom"></div><div class="checkbox__text">Учитывать фильтры</div></label></li>
+      
+            </ul>
+            <form class="email">
+              <input type="text" class="email__field" placeholder="Ваша эл. почта">
+                <button></button>
+            </form>
+      
+      
+          </div>
+        </div>
+      
+      </aside>
+      <section class="content">
+        <div class="content__inner">
+          <div class="catalog">
+            <div class="row">
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="novelty">Новинка</div>
+                    <div class="elem__section"><a href="#">Джемперы</a></div>
+                    <div class="elem__name">Oodjll</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item1.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">3499 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Платья</a></div>
+                    <div class="elem__name">Платье Dorothy Perkins Curve</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item3.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">6471 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Шорты</a></div>
+                    <div class="elem__name">Шорты домашние Incity</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item2.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">899 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="stock">акция</div>
+                    <div class="elem__section"><a href="#">Брюки</a></div>
+                    <div class="elem__name">Violeta by Mango</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item4.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">2999 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+      
+      
+      
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+      
+                    <div class="elem__section"><a href="#">Рубашки</a></div>
+                    <div class="elem__name">Рубашки в клетку Evans</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item5.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">5478,43 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Платья</a></div>
+                    <div class="elem__name">Платье Dorothy Perkins Curve</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item3.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">6471 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Куртки</a></div>
+                    <div class="elem__name">Куртка желтая оладушка Mango</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item7.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">30599 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Пальто</a></div>
+                    <div class="elem__name">Классическое пальто Grand Style</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item8.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">4390 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+      
+      
+      
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="novelty">Новинка</div>
+                    <div class="elem__section"><a href="#">Шапки</a></div>
+                    <div class="elem__name">Шерстяная вязаная шапка Ferz</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item9.png" alt=""></a>
+      
+                  </div>
+                  <div class="elem__price"><a href="#">5699 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Мокасины</a></div>
+                    <div class="elem__name">Vitacci</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item10.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">3130 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="catalog__elem big">
+      
+                  <div class="elem__title">
+                    <div class="stock">акция</div>
+                    <div class="elem__section"><a href="#">Юбки</a></div>
+      
+                    <div class="elem__name">Молодежная синяя юбка Dolce Gavana для модниц</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img class="big__picture" src="../img/item11.png" alt=""></a></div>
+                  <div class="elem__price"><a href="#">2999 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+      
+      
+      
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+      
+                    <div class="elem__section"><a href="#">Туфли</a></div>
+                    <div class="elem__name">Ярко глянцевые туфли Aldo</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item12.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">5478,43 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="novelty">Новинка</div>
+                    <div class="elem__section"><a href="#">Юбки</a></div>
+                    <div class="elem__name">Юбка Dorothy Perkins с карманами</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item13.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">2499 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Сандалии</a></div>
+                    <div class="elem__name">Модные сандалии Mon Ami</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item14.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">1000 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Платки</a></div>
+                    <div class="elem__name">Зеленый платок в клетку Venera</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item15.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">4399 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+      
+      
+      
+              <div class="col-6">
+                <div class="catalog__elem big">
+      
+                  <div class="elem__title">
+                    <div class="stock">акция</div>
+                    <div class="elem__section"><a href="#">Платки</a></div>
+                    <div class="elem__name">Классический платок Mascotte</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img class="big__picture" src="../img/item16.png" alt=""></a></div>
+      
+      
+      
+                  <div class="elem__price"><a href="#">999 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="novelty">Новинка</div>
+                    <div class="elem__section"><a href="#">Рюкзаки</a></div>
+                    <div class="elem__name">Яркий рюкзак Kawaii Factory</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item17.png" alt=""></a>
+      
+                  </div>
+                  <div class="elem__price"><a href="#">2200 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+      
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="catalog__elem">
+                  <div class="elem__title">
+                    <div class="elem__section"><a href="#">Шапки</a></div>
+                    <div class="elem__name">Шапка SE w Solid Pom Pom</div>
+                  </div>
+                  <div class="elem__picture"><a href="#"><img src="../img/item18.png" alt=""></a>
+                  </div>
+                  <div class="elem__price"><a href="#">3845 руб</a></div>
+                  <div class="basket"> <button class="btn btn__catalog"><span>В корзину</span></button></div>
+      
+                </div>
+              </div>
+            </div>
+      
+      
+          </div>
+        </div>
+      </section>
+        </div>
+      </div>
+      </div>
+      <div class="footer">
+        <div class="footer__top">
+          <div class="container">
+            <div class="top__inner">
+              <div class="footer__list">
+                <div class="list__title">Вопросы</div>
+                <ul class="list__info">
+                  <li><a href="">Как оформить заказ</a></li>
+                  <li><a href="">Условия доставки</a></li>
+                  <li><a href="">Возврат и обмен</a></li>
+                  <li><a href="">Оплата</a></li>
+                  <li><a href="">Оферта</a></li>
+                </ul>
+              </div>
+              <div class="footer__list">
+                <div class="list__title">В наличии</div>
+      
+                <ul class="list__info">
+                  <li><a href="">Женщинам</a></li>
+                  <li><a href="">Мужчинам</a></li>
+                  <li><a href="">Детям</a></li>
+                  <li><a href="">Аксессуары</a></li>
+                </ul>
+      
+              </div>
+              <div class="footer__list">
+                <div class="list__title">Другое</div>
+      
+                <ul class="list__info">
+                  <li><a href="">Вакансии</a></li>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Партнерская программа</a></li>
+                  <li><a href="">Инвесторам</a></li>
+                </ul>
+      
+              </div>
+              <div class="footer__list">
+                <div class="list__title">Мы в социальных сетях</div>
+      
+                <ul class="list__info">
+                  <li><a href="">Фейсбук</a></li>
+                  <li><a href="">В контакте</a></li>
+                  <li><a href="">Ютуб</a></li>
+                  <li><a href="">Одноклассники</a></li>
+                  <li><a href="">Инстаграм</a></li>
+                </ul>
+      
+              </div>
+              <div class="footer__list">
+                <div class="list__title">Способы оплаты</div>
+      
+                <ul class="list__info list__link">
+                  <li><a class="bg-qiwi" href="#"></a></li>
+                  <li><a class="bg-yandex" href="#"></a></li>
+                </ul>
+                <ul class=" list__info list__link">
+                  <li><a class="bg-alfa" href="#"></a></li>
+                  <li><a class="bg-sberbank" href="#"></a></li>
+                  <li><a class="bg-visa" href="#"></a></li>
+                  <li><a class="bg-webmoney" href="#"></a></li>
+                </ul>
+      
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="container">
+            <div class="bottom__inner">
+              <div class="bottom__left">
+                <div class="date">2010-2015 OOO "Swiet"</div>
+                <div class="mobile_v"><a href="">Мобильная версия</a></div>
+              </div>
+      
+                <div class="logo"><a href="#"><img src="../img/footer__icons.jpg" alt=""></a></div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</body>
+
+</html>

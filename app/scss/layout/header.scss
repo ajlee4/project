@@ -1,0 +1,153 @@
+.header {
+  flex-shrink: 0;
+  background: white;
+
+  &__top {
+    padding: 24px 0;
+    border-bottom: 1px solid #ebebeb;
+
+    .top {
+      &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  &__menu {
+    display: flex;
+    margin-left: 100px;
+
+    li {
+      margin-right: 28px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    ._link {
+      display: block;
+      letter-spacing: 0.1em;
+      line-height: 31px;
+      border-bottom: 2px solid transparent;
+      font-family: 'Panton bold',sans-serif;
+      font-size: 17px;
+      color: $menuColor;
+      text-decoration: none;
+
+      &:hover {
+        color: $dark-color;
+      }
+
+      &.active {
+        color: $dark-color;
+        border-color: $dark-color;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.currency {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__bottom {
+    border-bottom: 1px solid #44d654;
+
+    .bottom {
+      &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+      }
+    }
+  }
+
+  &__sub__menu {
+    display: flex;
+    font-family: 'Panton',sans-serif;
+    font-size: 15px;
+
+    li {
+      margin-right: 26px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    ._link {
+      color: $submenuColor;
+      display: block;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  &__search {
+    width: 395px;
+    display: flex;
+    line-height: 0;
+
+    input {
+      flex: 1;
+      padding: 0 10px;
+      letter-spacing: 0.05em;
+      border: 1px solid #d7d7d7;
+      border-right: 0;
+
+      &:focus {
+        border-color: $menuColor;
+      }
+    }
+
+    button {
+      padding: 0;
+      background-color: transparent;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      border: 1px solid $menuColor;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -7px;
+        margin-left: -7px;
+        background: url('../img/search.png')no-repeat center;
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

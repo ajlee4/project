@@ -1,0 +1,254 @@
+.sidebar {
+  width: 230px;
+  margin-bottom: 30px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  &__inner {}
+
+  &__elem {
+    margin-bottom: 20px;
+    border: 1px solid #ebebeb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+.ui-slider {
+  height: 7px;
+}
+.ui-slider-range {
+  background: #0044a9;
+}
+.ui-slider-handle{
+  border-radius: 50%;
+  outline: none;
+    border: 2px solid #0044a9;
+
+}
+.ui-state-default{
+  border: 0;
+}
+
+    .elem {
+      &__title {
+        font-family: "Panton semibold",sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .arrow__top {
+          background: url("../img/arrow-top.png");
+          width: 15px;
+          height: 15px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .arrow__right {
+          background: url("../img/arrow-top.png");
+          width: 15px;
+          height: 15px;
+        }
+      }
+
+      &__info {
+        margin-top: 20px;
+
+        label {
+          margin-bottom: 0;
+        }
+
+        li {
+          margin-bottom: 12px;
+          line-height: 0;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        span {
+          display: inline-block;
+        }
+
+        .checkbox {
+          display: none;
+
+          &:checked+.checkbox__custom::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: -1px;
+            right: 0;
+            bottom: 0;
+            left: 1px;
+            background: url("../img/tick.png");
+          }
+
+          &__custom {
+            width: 13px;
+            height: 13px;
+            position: relative;
+            border: 1px solid #d7d7d7;
+          }
+
+          &__item {
+            display: flex;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          &__text {
+            margin-left: 10px;
+            line-height: 13px;
+            font-family: "Panton semibold",sans-serif;
+            font-size: 13px;
+            color: #222222;
+
+            &:hover {
+              color: $menuColor;
+            }
+          }
+        }
+      }
+    }
+
+    .list__size {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+
+      li {
+        width: 33.333333%;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        &:nth-last-child(-n+3) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .list__color {
+    img {
+      margin-right: 10px;
+    }
+
+    .color {
+      display: flex;
+    }
+
+    .blue,
+    .dark_blue,
+    .green,
+    .orange,
+    .purple,
+    .red {
+      &:before {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 13px;
+        border: 1px solid #d7d7d7;
+        margin-right: 10px;
+      }
+    }
+
+    .blue {
+      &:before {
+        background: #004dcc;
+      }
+    }
+
+    .red {
+      &:before {
+        background: #ff1111;
+      }
+}
+      .green {
+        &:before {
+          background: #00a651;
+        }
+}
+        .orange {
+          &:before {
+            background: #ffb400;
+          }
+}
+          .purple {
+            &:before {
+              background: #662d91;
+            }
+          }
+
+            .dark_blue {
+              &:before {
+                background: #000052;
+              }
+
+            }
+          }
+
+          .select__style {
+            width: 100%;
+            border: 1px solid $gray-color;
+            font-size: 13px;
+            padding: 3px;
+          }
+
+          .email {
+            display: inline-block;
+            margin-top: 20px;
+            display: flex;
+            line-height: 0;
+            flex:1;
+            width: 100%;
+
+            button {
+              padding: 0;
+              background-color: transparent;
+              width: 32px;
+              height: 32px;
+              position: relative;
+              border: 1px solid $menuColor;
+              border-radius: 0 4px 4px 0;
+              cursor: pointer;
+
+              &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -9px;
+                margin-left: -8px;
+                background: url('../img/email.png')no-repeat center;
+                width: 16px;
+                height: 17px;
+              }
+            }
+
+            &__field {
+              padding: 3px;
+              width: 158px;
+            }
+          }
+
+          .subscription {
+            background: white;
+            border: none;
+            margin-top: 60px;
+          }
+        }

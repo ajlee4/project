@@ -1,0 +1,108 @@
+.btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  letter-spacing: 0.2em;
+  font-family: 'Panton bold';
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 8px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  &-blue {
+    color: $menuColor;
+    border-color: $menuColor;
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    }
+  }
+
+  &-green {
+    color: $green-color;
+    border-color: $green-color;
+
+    &:hover {
+      box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+    }
+  }
+
+  &__sidebar {
+    border: 1px solid #b7b7b7;
+    padding: 5px 20px;
+    margin-top: 20px;
+    width: 100%;
+
+
+    span {
+      color: $menuColor;
+      font-size: 11px;
+    }
+  }
+
+  &__catalog {
+    background: #0044a9;
+    padding: 10px 40px;
+    border-radius: 30px;
+
+    display: none;
+
+
+
+&:focus {
+  outline: none;
+}
+&:hover {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+}
+
+    span {
+      color: white;
+      text-transform: uppercase;
+      font-family: "Panton bold",sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+    }
+
+  }
+
+
+}
+.b {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+}
+
+.icon {
+  &-flag {
+    width: 16px;
+    height: 12px;
+    background: url('../img/button__icons__flag.png')no-repeat center;
+  }
+
+  &-cart {
+    width: 16px;
+    height: 15px;
+    background: url('../img/button__icons__cart.png')no-repeat center;
+  }
+}
