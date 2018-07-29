@@ -1,6 +1,6 @@
 .main {
   background: $gray-color;
-  margin: 40px 0;
+  margin: 40px 0 90px;
 
   &__banner {
     display: flex;
@@ -75,178 +75,307 @@
 
   &__inner {
     display: flex;
+    border-bottom: 1px solid #ebebeb;
   }
 
   .content {
     &__inner {
       margin-left: 20px;
-
-      .catalog {
-        .row > div {
-          margin-bottom: 20px;
-
-          &:nth-last-child(-n+4) {
-            margin-bottom: 0;
-          }
-        }
-
-        &__elem {
-          position: relative;
-          background: white;
-          padding: 40px;
-          font-family: "Panton semibold",sans-serif;
-          height: 440px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-between;
-
-          &:hover {
-            justify-content: center;
-          }
-
-          &:hover img {
-            transform: scale(1.1,1.2);
-            cursor: pointer;
-          }
-
-          &:hover .big__picture {
-            transform: scale(1.1,1.2);
-            cursor: pointer;
-          }
-
-          &:hover .elem__price {
-            display: none;
-          }
-
-          &:hover .elem__title {
-            display: none;
-          }
-
-          &:hover .btn__catalog {
-            display: block;
-          }
-          &:hover .basket {
-            display: block;
-          }
-.basket {
-  display: none;
-  position: absolute;
-  bottom: 30px;
+    }
+  }
 }
 
-          .novelty,
-          .stock {
-            font-size: 9px;
-            background: #44d654;
-            color: white;
-            text-transform: uppercase;
-            border-radius: 3px;
-            display: inline-block;
-            padding: 1px 4px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-          }
+.catalog {
+  .row > div {
+    margin-bottom: 20px;
 
-          .stock {
-            background: #ff9c00;
-          }
+    &:nth-last-child(-n+4) {
+      margin-bottom: 0;
+    }
+  }
 
-          .elem {
-            &__title {
-              width: 100%;
-            }
+  &__elem {
+    position: relative;
+    background: white;
+    padding: 40px;
+    font-family: "Panton semibold",sans-serif;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 
-            &__section {
-              a {
-                text-decoration: none;
-                color: #1f4ba5;
-                font-size: 13px;
-                width: 100%;
+    &:hover {
+      justify-content: center;
+      cursor: pointer;
+    }
 
-                &:hover {
-                  color: #3b5dac;
-                }
-              }
-              margin-bottom: 20px;
-            }
+    &:hover img {
+      transform: scale(1.1,1.2);
+    }
 
-            &__name {
-              line-height: 15px;
-            }
+    &:hover .big__picture {
+      transform: scale(1.1,1.2);
+      cursor: pointer;
+    }
 
-            &__picture {
-              position: relative;
-              display: flex;
-              justify-content: center;
-              width: 100%;
+    &:hover .elem__price {
+      display: none;
+    }
 
-              img {
-                transition: all 0.3s ease-out;
-                max-width: 100%;
-              }
+    &:hover .elem__title {
+      display: none;
+    }
 
-              a {
-                display: block;
-              }
-            }
+    &:hover .btn__catalog {
+      display: block;
+    }
 
-            &__price {
-              width: 100%;
+    &:hover .basket {
+      display: block;
+    }
 
-              a {
-                text-decoration: none;
-                color: #42a24a;
+    .basket {
+      display: none;
+      position: absolute;
+      bottom: 30px;
+    }
 
-                &:hover {
-                  color: #009110;
-                }
-              }
-            }
-          }
-        }
+    .novelty,
+    .stock {
+      font-size: 9px;
+      background: #44d654;
+      color: white;
+      text-transform: uppercase;
+      border-radius: 3px;
+      display: inline-block;
+      padding: 1px 4px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
 
-        .big {
-          position: relative;
+    .stock {
+      background: #ff9c00;
+    }
 
-          &:hover .elem__price {
-            display: none;
-          }
+    .elem {
+      &__title {
+        width: 100%;
+      }
 
-          &:hover .elem__title {
-            display: none;
-          }
+      &__section {
+        a {
+          text-decoration: none;
+          color: #1f4ba5;
+          font-size: 13px;
+          width: 100%;
 
-          .elem__title {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            width: 30%;
-          }
-
-          .elem__picture {
-            position: absolute;
-            top: 50px;
-            right: 40px;
-            transition: all 0.3s ease-out;
-            width: 250px;
-            height: 320px;
-
-            .big__picture {
-              max-width: 100%;
-              max-height: 100%;
-            }
+          &:hover {
+            color: #3b5dac;
           }
         }
-        .b {
-          position: absolute;
+        margin-bottom: 20px;
+      }
+
+      &__name {
+        line-height: 15px;
+      }
+
+      &__picture {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        img {
+          transition: all 0.3s ease-out;
+          max-width: 100%;
+        }
+
+        a {
           display: block;
-          width: 30%;
-          .btn__catalog {
-            display: block;
+        }
+      }
+
+      &__price {
+        width: 100%;
+
+        a {
+          text-decoration: none;
+          color: #42a24a;
+
+          &:hover {
+            color: #009110;
           }
         }
+      }
+    }
+  }
+
+  .big {
+    position: relative;
+
+    &:hover .elem__price {
+      display: none;
+    }
+
+    &:hover .elem__title {
+      display: none;
+    }
+
+    .elem__title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 30%;
+    }
+
+    .elem__picture {
+      position: absolute;
+      top: 50px;
+      right: 40px;
+      transition: all 0.3s ease-out;
+      width: 250px;
+      height: 320px;
+
+      .big__picture {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+
+  .b {
+    position: absolute;
+    display: block;
+    width: 30%;
+
+    .btn__catalog {
+      display: block;
+    }
+  }
+}
+
+.sorting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  .sort {
+    &__elem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__value {
+      font-family: "Panton semibold",sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        width: 24px;
+        height: 24px;
+        padding: 0;
+
+        &:hover {
+          box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+        }
+      }
+
+      &:before {
+        content: "Вид";
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Panton",sans-serif;
+        margin-right: 10px;
+      }
+    }
+
+    &__field {
+      margin-left: 40px;
+
+      &:before {
+        content: "Сортировать по";
+        display: inline-block;
+        font-size: 13px;
+        font-family: "Panton",sans-serif;
+        margin-right: 10px;
+      }
+
+      .sort__list {
+        font-size: 13px;
+        font-family: "Panton",sans-serif;
+        line-height: 13px;
+        width: 160px;
+        padding: 4px;
+      }
+    }
+  }
+}
+
+.view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .catalog__elem {
+    width: 230px;
+    height: 320px;
+
+    &:hover {
+      justify-content: space-between;
+    }
+
+    &:hover > .elem__name {
+      display: none;
+    }
+
+    .elem__picture {
+      width: 150px;
+      height: 160px;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+
+  &__title {
+    font-size: 24px;
+    font-family: "Panton semibold",sans-serif;
+    line-height: 24px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 24px;
+      height: 24px;
+      padding: 6px 7px;
+
+      &:hover {
+        box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
       }
     }
   }

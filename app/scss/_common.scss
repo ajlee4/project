@@ -36,6 +36,11 @@ button {
     outline: none;
   }
 }
+select {
+  &:focus {
+    outline: none;
+  }
+}
 .wrapper {
   min-height: 100vh;
   display: flex;
